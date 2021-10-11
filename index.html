@@ -5,16 +5,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
   <title>Rock, Paper, Scissors</title>
 
   <style>
-    body {
-      background: #E9E9E0;
-    }
   </style>
 </head>
 
 <body>
+
+  <!-- Display when match is finished -->
+  <div class="match-finished-overlay">
+    <h1 class="winner-title"></h1>
+    <button id="restart-btn">Play again?</button>
+  </div>
+
+  <main>
+    <h1>Rock Paper Scissors</h1>
+    <p>First to 5 wins!</p>
+
+    <div class="choice-container">
+      <button data-num-in-array="0" class="choice rock">✊</button>
+      <button data-num-in-array="1" class="choice paper">✋</button>
+      <button data-num-in-array="2" class="choice scissors">✌</button>
+    </div>
+
+    <div class="announce-round-winner">Winner will be announced here</div>
+
+
+    <div class="list-scores">
+      <div>Your Score = <span class="player-score">0</span></div>
+      <div>Computer Score = <span class="computer-score">0</span></div>
+    </div>
+
+  </main>
 
   <script src="/main.js"></script>
 
